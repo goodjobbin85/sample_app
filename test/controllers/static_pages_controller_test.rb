@@ -8,7 +8,7 @@ end
   test "should get home" do
     get static_pages_home_url
     assert_response :success
-    assert_select "title", "Home | #{@base_setup}"
+    assert_select "title", "#{@base_setup}"
   end
 
   test "should get help" do
